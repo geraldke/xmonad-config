@@ -10,7 +10,7 @@ xmproc <- spawnPipe "/usr/bin/xmobar /home/gerald/.xmonad/.xmobarrc"
 xmonad $ defaultConfig
     { manageHook = manageDocks <+> manageHook defaultConfig
     , layoutHook = avoidStruts $ layoutHook defaultConfig
-    , focusedBorderColor = "#00B2EE"
+    , focusedBorderColor = "#00FF00"
     , terminal = "terminator"
     } `additionalKeys`
     [ ((mod4Mask .|. shiftMask, xK_z), spawn "gnome-screensaver-command --lock")

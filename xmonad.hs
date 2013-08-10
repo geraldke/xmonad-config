@@ -6,6 +6,7 @@ import XMonad.Util.EZConfig(additionalKeys)
 import System.IO
 
 main = do
+spawn "feh --bg-fill ~/Downloads/alien_evolution.jpg"
 xmproc <- spawnPipe "/usr/bin/xmobar /home/gerald/.xmonad/.xmobarrc"
 xmonad $ defaultConfig
     { manageHook = manageDocks <+> manageHook defaultConfig
